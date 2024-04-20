@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,800;1,400&display=swap');
+
+
+*,*::after,*::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:"poppins", sans-serif ;
+    
+}
+
+::selection{
+    background-color: #0b372dbb;
+}
+
+.logo{
+    width: 59px;
+}
+header{
+    position: absolute;
+    z-index: 9999;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+header nav{
+   
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+header ul a:hover{
+    text-shadow: red -3px 0, cyan 3px 0;
+}
+.search a{
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+.hamburger{
+    padding-left: 1.5rem;
+}
+
+.hamburger a{
+    width: 75px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   justify-content: center;
+   align-items: center;
+}
+
+
+.hamburger .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+
+.hamburger .bar::before,
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before{
+    top: -4.5px;
+}
+.hamburger .bar::after{
+    top: 4.5px;
+}
+
+
+main{
+    position: relative;
+    background-color: #353;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.bg-img{
+    position: absolute;
+    width: 204.97%;
+    top: 8.34%;
+    left: 42.69%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.fog-7{
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: calc(50% - 182px );
+    left: calc(50% + 337px );
+    transform: translate(-50%,-50%);
+}
+.mountain-10{
+    position: absolute;
+    z-index: 3;
+    width: 892px;
+    top: calc(50% + 128px );
+    left: calc(50% + 241px);
+    transform: translate(-50%,-50%);
+}
+.fog-6{
+    position: absolute;
+    z-index: 4;
+    width: 1610px;
+    top: calc(50% + 128px);
+    left: calc(50% + -14px);
+    transform: translate(-50%,-50%);
+}
+.mountain-9{
+    position: absolute;
+    z-index: 5;
+    width: 470px;
+    top: calc(50% + 154px);
+    left: calc(50% - 453px);
+    transform: translate(-50%,-50%);
+}
+
+.mountain-8{
+    position: absolute;
+    z-index: 6;
+    width: 659px;
+    top: calc(50% + 76px);
+    left: calc(50% - 205px);
+    transform: translate(-50%,-50%);
+}
+.fog-5{
+    position: absolute;
+    z-index: 7;
+    width: 450px;
+    top: calc(50% + 90px);
+    left: calc(50% + 97px);
+    transform: translate(-50%,-50%);
+}
+.mountain-7{
+    position: absolute;
+    z-index: 8;
+    width: 437px;
+    top: calc(50% + 97px);
+    left: calc(50% + 264px);
+    transform: translate(-50%,-50%);
+}
+
+
+.text{
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 130px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.text h2{
+    font-weight: 100;
+    font-size: 4.5rem;
+    pointer-events: auto;
+}
+
+
+.text h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 0.69;
+    pointer-events: auto;
+}
+
+.mountain-6{
+    position: absolute;
+    z-index: 10;
+    width: 408px;
+    top: calc(50% + 96px);
+    left: calc(50% + 578px);
+    transform: translate(-50%,-50%);
+}
+
+
+
+.fog-4{
+    position: absolute;
+    z-index: 11;
+    width: 590px;
+    top: calc(50% + 233px );
+    left: calc(50% - 60px);
+    transform: translate(-50%,-50%);
+}
+
+.mountain-5{
+    position: absolute;
+    z-index: 12;
+    width: 625px;
+    top: calc(50% + 252px);
+    left: calc(50% + 124px);
+    transform: translate(-50%,-50%);
+}
+.fog-3{
+    position: absolute;
+    z-index: 13;
+    width: 625px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    transform: translate(-50%,-50%);   
+}
+
+.mountain-4{
+    position: absolute;
+    z-index: 14;
+    width: 625px;
+    top: calc(50% + 119px);
+    left: calc(50% - 394px);
+    transform: translate(-50%,-50%);
+}
+
+.mountain-1{
+    position: absolute;
+    z-index: 18;
+    width: 625px;
+    top: calc(50% + 139px);
+    left: calc(50% - 576px);
+    transform: translate(-50%,-50%);
+}
+
+.mountain-2{
+    position: absolute;
+    z-index: 15;
+    width: 669px;
+    top: calc(50% + 148px);
+    left: calc(50% + 356px);
+    transform: translate(-50%,-50%);
+}
+.mountain-3{
+    position: absolute;
+    z-index: 16;
+    width: 625px;
+    top: calc(50% + 79px );
+    left: calc(50% + 710px);
+    transform: translate(-50%,-50%);
+}
+
+
+
+.sunrays{
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black_shadow{
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.fog-1{
+    position: absolute;
+    z-index: 21;
+    width: 1600px;
+    top: calc(100% - 355px);
+    left: calc(50%);
+    transform: translate(-50%,-50%);
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000001ms cubic-bezier(.2,.49,.32,.99);
+    
+}
+
+.vignette{
+    position: absolute;
+    z-index: 95;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
+    pointer-events: none;
+}
+
+@media (max-width: 1193px) {
+    .text h1{
+        font-size: 2rem;
+    }
+    .text h2{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 959px){
+    .text h1{
+        font-size: 2rem;
+        line-height: 1.1;
+
+    }
+    .text h2{
+        font-size: 3.1rem;
+        line-height: 1.1;
+    }
+    header nav{
+        padding: 0 1rem;
+
+    }
+
+    .logo{
+        width: 44px;
+    }
+
+    header ul a{
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+
+    }
+
+    .search a{
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+
+    }
+    .hamburger{
+        padding-left: 0.9rem;
+    }
+    .hamburger a{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 809px) {
+    .text h1{
+        font-size: 1.5rem;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 717px) {
+    .text h1{
+        font-size: 1.4rem;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 639px) {
+    .text h1{
+        font-size: 1.3rem;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .text h1{
+        font-size: 0.7rem;
+    }
+    .text h2{
+        font-size: 1.7rem;
+    }
+
+}
+@media (max-width: 475px){
+    .text h1{
+        font-size: 2rem;
+        line-height: 1.1;
+
+    }
+    .text h2{
+        font-size: 3.1rem;
+        line-height: 1.1;
+    }
+}
+@media (max-width: 1219px){
+    .text h1{
+        font-size: 2rem;
+        line-height: 1.1;
+
+    }
+    .text h2{
+        font-size: 3.1rem;
+        line-height: 1.1;
+    }
+}
+@media (max-width: 1005px){
+    .text h1{
+        font-size: 2rem;
+        line-height: 1.1;
+
+    }
+    .text h2{
+        font-size: 3.1rem;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 809px) {
+    .text h1{
+        font-size: 1.5rem;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+}
+
+@import url('');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: rgb(53, 30, 185);
+    margin: 0px 14px;
+    margin-right: 38px;
+}
+
+#logo img{
+    height: 30px;
+    
+}
+#navbar{
+    background-color:aquamarine;
+    padding: 13px 14px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 7px 11px;
+}
+#navbar ul li a:hover{
+    background: grey;
+    text-shadow: red -3px 0, cyan 3px 0;
+
+}
+
+
+
+#navbar li{
+    list-style: none;
+}
+
+
+#introsection{
+    color: rgb(238, 238, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 300px;
+    background: url('https://i.pinimg.com/originals/99/ac/27/99ac278183e97bc8c521c9d69e95221b.jpg') center / cover no-repeat;
+    background-color: red;
+}
+
+#introsection div.small{
+    font-size: 27px;
+}
+
+#sponserssection{
+    background-color: rgb(151, 58, 58);
+    height: 300px;
+}
+#sponserssection h3{
+    text-align: center;
+    padding-top: 12px;
+}
+
+#sponsers{
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+
+}
+.spimage{
+    height: 145px;
+    margin: 20px;
+}
+
+#missionsection h2{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.card{
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 22%;
+    margin: 23px 75px;
+    height: 209px;
+    display: inline-block;
+    background-color: rgb(235, 241, 241);
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 100px;
+    padding: 0px 14px;
+}
+.card-img img{
+    height:inherit;
+}
+
+
+.cardcontent{
+    padding: 0 10px;
+
+}
+.cardcontent p{
+    font-size: 19px;
+
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 43px;
+}
